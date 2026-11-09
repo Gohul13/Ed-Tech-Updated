@@ -73,4 +73,4 @@ router.delete(
   requireAdmin,
   deleteLessonAttachment 
 );
-export default router;
+export default router;    

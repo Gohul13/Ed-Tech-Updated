@@ -6,4 +6,4 @@ const router = express.Router();
 router.get("/dataset", requireAuth, requireAdmin, getMLDataset);
 router.get("/predict-dropout", requireAuth, requireAdmin, predictDropout);
 router.get("/dropout-risk-students", requireAuth, requireAdmin, getDropoutRiskStudents);
-export default router;    
+export default router;       

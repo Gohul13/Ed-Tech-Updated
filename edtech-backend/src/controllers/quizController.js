@@ -15,10 +15,6 @@ function sanitizeQuizForStudent(quizDoc) {
   };
 }
 
-/**
- * POST /admin/lessons/:lessonId/quiz
- * Admin creates/replaces quiz for a lesson.
- */
 export const createLessonQuiz = async (req, res) => {
   try {
     const { lessonId } = req.params;
@@ -45,10 +41,7 @@ export const createLessonQuiz = async (req, res) => {
   }
 };
 
-/**
- * GET /lessons/:lessonId/quiz
- * Student fetches quiz (without correct answers).
- */
+
 export const getLessonQuiz = async (req, res) => {
   try {
     const { lessonId } = req.params;
@@ -64,11 +57,7 @@ export const getLessonQuiz = async (req, res) => {
   }
 };
 
-/**
- * POST /lessons/:lessonId/quiz/submit
- * Student submits answers and gets score.
- * Also stores latest quizScore/isQuizPassed on Enrollment.lessonProgress.
- */
+
 export const submitLessonQuiz = async (req, res) => {
   try {
     const { lessonId } = req.params;

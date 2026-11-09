@@ -60,7 +60,7 @@ export const sendRiskNotification = async (req, res) => {
         `Thanks,\nEduTech Team`;
 
     if (channel !== "email") {
-      // Future: SMS / WhatsApp integrations (Twilio, etc.)
+      
       return res.json({
         ok: true,
         simulated: true,

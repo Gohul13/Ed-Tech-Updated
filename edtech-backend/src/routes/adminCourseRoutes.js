@@ -23,3 +23,5 @@ router.patch(
 router.delete("/courses/:id", requireAuth, requireAdmin, deleteCourse);
 
 export default router;
+
+

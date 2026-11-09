@@ -6,4 +6,4 @@ const router = express.Router();
 router.get("/:courseId/lessons", requireAuth, getPublishedLessons);
 router.get("/lesson/:lessonId", requireAuth, getLessonById);
 
-export default router;
+export default router;  
