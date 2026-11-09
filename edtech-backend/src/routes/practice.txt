@@ -1,0 +1,34 @@
+
+
+router.post("/api/employee", authMiddlwere, authCheckRights, addData);
+router.get("/api/employee-details", ShowDetails);
+router.put("/api/changeState", updateEmployee);
+router.delete("/api/deleteEmployee", DeleteEmployee);
+
+
+router.post("/api/product/insert", insertProduct);
+router.get("/api/get", productDetails);
+router.put("/api/update", updateProduct);
+router.delete("/api/delete", deleteProduct);
+
+
+------------------------------------------------------------------------------
+
+router.post("/", authMiddleware, authCheckRights, createEmployee);
+router.get("/", getAllEmployees);
+router.patch("/:id/status", updateEmployeeStatus);
+router.delete("/:id", deleteEmployee);
+
+
+router.post("/", insertProduct);
+router.get("/", getAllProducts);
+router.put("/:id", updateProduct);
+router.delete("/:id", deleteProduct);
+
+
+Why Rest APi exists ? what problem it solved initialy ?
+Before and after rest APi how APi works and what used ? Alternate to Rest Api?
+REST Api advanatges comparing to other APIs? Alternate to Rest Api ?
+
+Status code explanations ? what , why , when for each Status code,
+HTTP methods , api documentation , api signature 
